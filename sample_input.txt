@@ -1,0 +1,35 @@
+public class Calculator {
+    public static void main(String[] args) {
+        int count = 0;
+        double rate = 3.14;
+        double small = 1.5e-3;
+        double whole = 12.;
+        boolean done = false;
+        Object empty = null;
+
+        while (count <= 10 && !done) {
+            count++;
+            rate += 0.5;
+            if (count == 5 || rate >= 4.0) {
+                done = true;
+            }
+            if (count != 3) {
+                rate -= 1;
+            }
+        }
+
+        int diff = count - 10;
+        diff--;
+        diff *= 2;
+        int[] arr = new int[5];
+        arr[0] = diff * 2 % 3;
+        if (rate > 2.5 && diff < 0) {
+            rate = rate / 2;
+        }
+        System.out.println(count);
+
+        double err1 = 2e+;
+        int err2 = 3abc;
+        int err3 = 5 # 2;
+    }
+}
